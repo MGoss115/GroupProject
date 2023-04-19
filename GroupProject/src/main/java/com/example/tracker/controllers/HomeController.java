@@ -44,7 +44,7 @@ public class HomeController {
 		
 		List<Job> getAll = jobService.allJobs();
 		model.addAttribute("getAll", getAll);
-		return "dashboard.jsp";
+		return "WEB-INF/dashboard.jsp";
 		}
 	}
 	

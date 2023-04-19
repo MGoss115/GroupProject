@@ -22,6 +22,7 @@
 <meta charset="UTF-8">
 <title>Register</title>
 </head>
+<<<<<<< HEAD
 
 <body class="d-flex justify-content-center">
 	<div class="container m-5">
@@ -54,6 +55,40 @@
 			<form:errors path="confirmPassword" class="text-danger fw-semibold" />
 			<button class="btn btn-outline-primary">Register</button>
 
+=======
+<body>	
+	<img id="image" src="https://wpreloaded.com/wp-content/uploads/2018/03/Application-Tracking-System_final-02-1024x355.jpg" 	alt="trackerImage" />
+		<form:form class="row g-3 " action="/register" method="post" modelAttribute="newUser">
+		<h3>Register</h3>
+  			<p class="col-md-6">
+		        <form:label class="form-label" path="firstName">First Name:</form:label>
+		        <form:errors class="text-danger fw-semibold" path="firstName"/>
+		        <form:input class="form-control" path="firstName"/>
+		    </p>
+		    <p class="col-md-6">
+		        <form:label class="form-label" path="lastName">Last Name:</form:label>
+		        <form:errors class="text-danger fw-semibold" path="lastName"/>
+		        <form:input class="form-control" path="lastName"/>
+		    </p>
+		    <p class="col-6">
+		        <form:label class="form-label" path="email">Email:</form:label>
+		        <form:errors class="text-danger fw-semibold" path="email"/>
+		        <form:input class="form-control" path="email"/>
+		    </p>
+		    <p class="col-6">
+		        <form:label class="form-label" path="password">Password:</form:label>
+		        <form:errors class="text-danger fw-semibold" path="password"/>     
+		        <form:input class="form-control" type="password" path="password" min="0"/>
+		    </p>    
+		   	<p class="col-md-6">
+		        <form:label class="form-label" path="confirmPassword">Confirm Password:</form:label>
+		        <form:errors class="text-danger fw-semibold" path="confirmPassword"/>     
+		        <form:input class="form-control" type="password" path="confirmPassword" min="0" />
+		    </p>    
+		    <div class="col-12">
+   				<button style="padding-right: 95px" type="submit" class="btn btn-primary">Register</button>
+ 			</div>
+>>>>>>> parent of e60e14c (added sytlying to registration page)
 		</form:form>
 		<h3>Have an Account?</h3>
 			<a class="link" href="/">Login</a>
